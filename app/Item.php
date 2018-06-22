@@ -12,9 +12,16 @@ class Item extends Model
     {
         return $this->belongsToMany(User::class)->withPivot('type')->withTimestamps();
     }
-
+    
+//want------------------------------------------------------------------------------------
     public function want_users()
     {
         return $this->users()->where('type', 'want');
+    }
+    
+//have------------------------------------------------------------------------------------
+    public function have_users()
+    {
+        return $this->users()->where('type', 'have');
     }
 }
