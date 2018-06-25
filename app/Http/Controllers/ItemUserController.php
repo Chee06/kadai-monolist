@@ -47,8 +47,8 @@ class ItemUserController extends Controller
             }
             return redirect()->back();
         }
-        
-      //Have
+
+//have
         public function have()
         {
             $itemCode = request()->itemCode;
@@ -74,6 +74,7 @@ class ItemUserController extends Controller
     
             return redirect()->back();
         }
+        
         public function dont_have()
         {
             $itemCode = request()->itemCode;
@@ -84,4 +85,4 @@ class ItemUserController extends Controller
             }
             return redirect()->back();
         }
-    }
+}

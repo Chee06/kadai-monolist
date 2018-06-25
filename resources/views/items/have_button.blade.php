@@ -1,4 +1,4 @@
-@if (Auth::user()->is_haveing($item->code))
+@if (Auth::user()->is_having($item->code))
     {!! Form::open(['route' => 'item_user.dont_have', 'method' => 'delete']) !!}
         {!! Form::hidden('itemCode', $item->code) !!}
         {!! Form::submit('Have', ['class' => 'btn btn-success']) !!}
