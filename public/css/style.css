@@ -64,7 +64,7 @@ footer {
     height: 100%;
     max-width: 100%;
 }
-.p.item-title {
+p.item-title {
     /* Keep the number of lines in a sentence on two lines, and add "..." to the end of line. */
     display: -webkit-box;
     -webkit-box-orient: vertical;
